@@ -1,5 +1,3 @@
-import GlassCard from './GlassCard';
-
 interface ProjectCardProps {
   title: string;
   description: string;
@@ -7,6 +5,7 @@ interface ProjectCardProps {
   variant?: 'large' | 'small' | 'default';
   image?: string;
   className?: string;
+  tags?: string[];
 }
 
 export default function ProjectCard({ 
@@ -20,7 +19,7 @@ export default function ProjectCard({
   
   if (variant === 'large') {
     return (
-      <div className={`col-span-2 glass rounded-xl overflow-hidden relative group h-48 ${className}`}>
+      <div className={`col-span-1 md:col-span-2 glass rounded-xl overflow-hidden relative group h-48 ${className}`}>
         {image && (
           <img 
             src={image} 

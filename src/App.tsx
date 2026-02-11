@@ -24,7 +24,7 @@ function App() {
 
       <Navbar />
       
-      <main className="pt-28 pb-20 px-4 max-w-lg mx-auto space-y-8">
+      <main className="pt-28 pb-20 px-4 max-w-7xl mx-auto space-y-8">
         <Hero />
 
         <section className="space-y-4">

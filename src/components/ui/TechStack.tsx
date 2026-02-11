@@ -2,7 +2,7 @@ import { SiPython, SiPytorch, SiOpenai, SiTailwindcss } from 'react-icons/si';
 
 export default function TechStack() {
   return (
-    <div className="col-span-2 glass rounded-xl p-5 border-t border-white/10">
+    <div className="col-span-1 md:col-span-2 glass rounded-xl p-5 border-t border-white/10">
       <div className="flex justify-between items-center mb-4">
         <h3 className="text-xs font-bold text-slate-400 uppercase tracking-widest">Neural Tech Stack</h3>
         <div className="flex gap-1">

@@ -1,6 +1,6 @@
 export default function CTA() {
   return (
-    <section className="pt-8 text-center relative max-w-lg mx-auto px-4 pb-20">
+    <section className="pt-8 text-center relative max-w-4xl mx-auto px-4 pb-20">
       <div className="glass rounded-2xl p-8 border-dashed border border-white/20">
         <h3 className="text-xl font-bold text-white mb-2">Ready to evolve?</h3>
         <p className="text-sm text-slate-400 mb-6">Let's build the next generation of intelligent software together.</p>
