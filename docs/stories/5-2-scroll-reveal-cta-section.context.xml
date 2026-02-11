@@ -1,0 +1,78 @@
+<story-context id="bmad/bmm/workflows/4-implementation/story-context/template" v="1.0">
+  <metadata>
+    <epicId>5</epicId>
+    <storyId>2</storyId>
+    <title>Scroll reveal &amp; CTA Section</title>
+    <status>drafted</status>
+    <generatedAt>2026-02-11</generatedAt>
+    <generator>BMAD Story Context Workflow</generator>
+    <sourceStoryPath>docs/stories/5-2-scroll-reveal-cta-section.md</sourceStoryPath>
+  </metadata>
+
+  <story>
+    <asA>visitor</asA>
+    <iWant>see content revealed smoothly as I scroll and a clear call-to-action to contact the creator</iWant>
+    <soThat>the browsing experience feels polished and leads to engagement</soThat>
+    <tasks>
+      - CTA Section (AC: 1, 2, 6)
+      - Animation (AC: 3, 4, 5)
+      - Integration
+    </tasks>
+  </story>
+
+  <acceptanceCriteria>
+    - 1. CTA section implemented with a prominent dashed border (border-dashed).
+    - 2. "Initiate Contact" button added to the CTA section.
+    - 3. Framer Motion whileInView reveals implemented for all sections and Bento cards.
+    - 4. Reveal animations are subtle (e.g., slight lift and fade in).
+    - 5. Scroll animations are configured with viewport={{ once: true }}.
+    - 6. CTA section follows the project's Glassmorphism and dark theme standards.
+  </acceptanceCriteria>
+
+  <artifacts>
+    <docs>
+      <doc>
+        <path>docs/prd.md</path>
+        <title>AI Aesthetic Portfolio - PRD</title>
+        <section>7. Call to Action (CTA)</section>
+        <snippet>A final module with a large CTA: "Initiate Contact". Dashed-border around the button to emphasize the "System Interface" feel.</snippet>
+      </doc>
+      <doc>
+        <path>docs/architecture.md</path>
+        <title>Architecture</title>
+        <section>5.2 Epic to Architecture Mapping</section>
+        <snippet>Epic 5: Refinement. Includes CTA section.</snippet>
+      </doc>
+    </docs>
+    <code>
+      <artifact>
+        <path>src/components/sections/CTA.jsx</path>
+        <kind>component</kind>
+        <reason>Final engagement point for visitors.</reason>
+      </artifact>
+    </code>
+    <dependencies>
+      <dependency>
+        <name>react</name>
+        <version>^19.0.0</version>
+      </dependency>
+      <dependency>
+        <name>framer-motion</name>
+        <version>^12.0.0</version>
+      </dependency>
+    </dependencies>
+  </artifacts>
+
+  <constraints>
+    - Dashed border: border-dashed.
+    - Animation: whileInView with viewport once: true.
+  </constraints>
+  <interfaces></interfaces>
+  <tests>
+    <standards>Manual verification of scroll reveals and CTA interaction.</standards>
+    <locations>src/components/sections/CTA.jsx</locations>
+    <ideas>
+      - 5.2-AC3: Verify whileInView triggers correctly on scroll.
+    </ideas>
+  </tests>
+</story-context>

@@ -1,0 +1,84 @@
+<story-context id="bmad/bmm/workflows/4-implementation/story-context/template" v="1.0">
+  <metadata>
+    <epicId>3</epicId>
+    <storyId>2</storyId>
+    <title>Typewriter Effect for Hero Content</title>
+    <status>drafted</status>
+    <generatedAt>2026-02-11</generatedAt>
+    <generator>BMAD Story Context Workflow</generator>
+    <sourceStoryPath>docs/stories/3-2-typewriter-effect-for-hero-content.md</sourceStoryPath>
+  </metadata>
+
+  <story>
+    <asA>visitor</asA>
+    <iWant>see the hero content presented with branded animations and a typewriter effect</iWant>
+    <soThat>the site's introduction feels dynamic and aligned with the "AI era" aesthetic</soThat>
+    <tasks>
+      - Component Creation (AC: 1)
+      - Typography & Branding (AC: 2, 3, 6)
+      - Animation (AC: 4)
+      - Call to Action (AC: 5)
+      - Integration
+    </tasks>
+  </story>
+
+  <acceptanceCriteria>
+    - 1. Hero component created and placed at the top of the main content area.
+    - 2. H1 header implemented: "Building the Future [Line Break] with AI".
+    - 3. Span "with AI" styled as italicized cyan (neon-cyan).
+    - 4. Typewriter animation implemented for the paragraph "Architecting neural pathways...".
+    - 5. "Explore Systems" CTA button implemented with a Glow effect and arrow icon.
+    - 6. "Available for Innovation" pill badge with a pulsing indicator added.
+  </acceptanceCriteria>
+
+  <artifacts>
+    <docs>
+      <doc>
+        <path>docs/prd.md</path>
+        <title>AI Aesthetic Portfolio - PRD</title>
+        <section>6.2 Hero Section</section>
+        <snippet>H1: "Building the Future [Line Break] with AI". Typewriter intro text. "Explore Systems" CTA.</snippet>
+      </doc>
+      <doc>
+        <path>docs/architecture.md</path>
+        <title>Architecture</title>
+        <section>5.2 Epic to Architecture Mapping</section>
+        <snippet>Epic 2: Hero Section. Includes typewriter hook.</snippet>
+      </doc>
+    </docs>
+    <code>
+      <artifact>
+        <path>src/components/sections/Hero.jsx</path>
+        <kind>component</kind>
+        <reason>Primary landing area and introduction.</reason>
+      </artifact>
+    </code>
+    <dependencies>
+      <dependency>
+        <name>react</name>
+        <version>^19.0.0</version>
+      </dependency>
+      <dependency>
+        <name>framer-motion</name>
+        <version>^12.0.0</version>
+      </dependency>
+      <dependency>
+        <name>react-icons</name>
+        <version>latest</version>
+      </dependency>
+    </dependencies>
+  </artifacts>
+
+  <constraints>
+    - Typewriter: starts after page load.
+    - Colors: neon-cyan #0df2f2, neon-purple #8b5cf6.
+  </constraints>
+  <interfaces></interfaces>
+  <tests>
+    <standards>Animation timing and responsive typography verification.</standards>
+    <locations>src/components/sections/Hero.jsx</locations>
+    <ideas>
+      - 3.2-AC4: Verify typewriter animation completes successfully.
+    </ideas>
+  </tests>
+</story-context>

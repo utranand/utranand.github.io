@@ -1,0 +1,75 @@
+<story-context id="bmad/bmm/workflows/4-implementation/story-context/template" v="1.0">
+  <metadata>
+    <epicId>4</epicId>
+    <storyId>2</storyId>
+    <title>Mouse-Tracked Spotlight Interaction</title>
+    <status>drafted</status>
+    <generatedAt>2026-02-11</generatedAt>
+    <generator>BMAD Story Context Workflow</generator>
+    <sourceStoryPath>docs/stories/4-2-mouse-tracked-spotlight-interaction.md</sourceStoryPath>
+  </metadata>
+
+  <story>
+    <asA>visitor</asA>
+    <iWant>see a spotlight effect follow my mouse on the project cards</iWant>
+    <soThat>the site feels reactive, intelligent, and engaging</soThat>
+    <tasks>
+      - Logic Implementation (AC: 1, 3)
+      - Visual Implementation (AC: 2, 4, 6)
+      - Optimization (AC: 5)
+      - Integration
+    </tasks>
+  </story>
+
+  <acceptanceCriteria>
+    - 1. Mouse-move event listener integrated into the BentoCard component.
+    - 2. Radial gradient "spotlight" rendered on the card surface.
+    - 3. Spotlight position updates smoothly in real-time as the cursor moves over the card.
+    - 4. Spotlight is only visible during hover and fades out when the mouse leaves the card.
+    - 5. Performance is optimized to prevent lag during rapid mouse movements.
+    - 6. Spotlight color and intensity align with the "AI era" design (e.g., subtle cyan or white glow).
+  </acceptanceCriteria>
+
+  <artifacts>
+    <docs>
+      <doc>
+        <path>docs/prd.md</path>
+        <title>AI Aesthetic Portfolio - PRD</title>
+        <section>8.1 Micro-animations</section>
+        <snippet>Mouse tracking spotlight on cards: A subtle light effect that follows the user's cursor, emphasizing the interactive nature of the content.</snippet>
+      </doc>
+      <doc>
+        <path>docs/architecture.md</path>
+        <title>Architecture</title>
+        <section>5.2 Epic to Architecture Mapping</section>
+        <snippet>Epic 4: Interaction. Includes mouse tracking hook.</snippet>
+      </doc>
+    </docs>
+    <code>
+      <artifact>
+        <path>src/hooks/useMouseSpotlight.js</path>
+        <kind>hook</kind>
+        <reason>Reusable logic for mouse tracking spotlight effect.</reason>
+      </artifact>
+    </code>
+    <dependencies>
+      <dependency>
+        <name>react</name>
+        <version>^19.0.0</version>
+      </dependency>
+    </dependencies>
+  </artifacts>
+
+  <constraints>
+    - Use radial-gradient circle at mouse coordinates.
+    - Use CSS variables if possible for performance.
+  </constraints>
+  <interfaces></interfaces>
+  <tests>
+    <standards>Manual verification of spotlight reactivity and performance.</standards>
+    <locations>src/hooks/useMouseSpotlight.js</locations>
+    <ideas>
+      - 4.2-AC4: Verify spotlight visibility on mouse enter/leave.
+    </ideas>
+  </tests>
+</story-context>

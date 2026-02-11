@@ -1,6 +1,6 @@
 # Story 5.1: Module-Specific Cards (Tech Stack, Stats, Socials)
 
-Status: drafted
+Status: review
 
 ## Story
 
@@ -10,25 +10,25 @@ so that I can quickly understand the creator's skills and professional reach.
 
 ## Acceptance Criteria
 
-1. [ ] `TechStack` card implemented with icons for Python, PyTorch, OpenAI, and Tailwind CSS.
-2. [ ] `StatsCard` implemented with centered large text (e.g., "12+ Models Built").
-3. [ ] `SocialsCard` implemented with circular icons for terminal and email.
-4. [ ] Each card follows the Glassmorphism and interactive spotlight standards from Epic 4.
-5. [ ] Cards are laid out within the `BentoGrid` according to the 2026 design layout.
-6. [ ] Hover effects added to tech stack icons for extra interactivity.
+1. [x] `TechStack` card implemented with icons for Python, PyTorch, OpenAI, and Tailwind CSS.
+2. [x] `StatsCard` implemented with centered large text (e.g., "12+ Models Built").
+3. [x] `SocialsCard` implemented with circular icons for terminal and email.
+4. [x] Each card follows the Glassmorphism and interactive spotlight standards from Epic 4.
+5. [x] Cards are laid out within the `BentoGrid` according to the 2026 design layout.
+6. [x] Hover effects added to tech stack icons for extra interactivity.
 
 ## Tasks / Subtasks
 
-- [ ] Tech Stack Module (AC: 1, 6)
-  - [ ] Create `TechStack` card component
-  - [ ] Integrate technology icons (use `react-icons` or similar)
-- [ ] Stats Module (AC: 2)
-  - [ ] Create `StatsCard` card component
-- [ ] Socials Module (AC: 3)
-  - [ ] Create `SocialsCard` card component
-- [ ] Integration (AC: 4, 5)
-  - [ ] Add all modules to the `BentoGrid` section
-  - [ ] Apply prop-based grid spanning per PRD/Epics
+- [x] Tech Stack Module (AC: 1, 6)
+  - [x] Create `TechStack` card component
+  - [x] Integrate technology icons (use `react-icons` or similar)
+- [x] Stats Module (AC: 2)
+  - [x] Create `StatsCard` card component
+- [x] Socials Module (AC: 3)
+  - [x] Create `SocialsCard` card component
+- [x] Integration (AC: 4, 5)
+  - [x] Add all modules to the `BentoGrid` section
+  - [x] Apply prop-based grid spanning per PRD/Epics
 
 ## Dev Notes
 
@@ -55,7 +55,9 @@ so that I can quickly understand the creator's skills and professional reach.
 
 ### Context Reference
 
-<!-- Path(s) to story context XML will be added here by context workflow -->
+### Context Reference
+
+- [5-1-module-specific-cards-tech-stack-stats-socials.context.xml](file:///Users/puttipongu/Workspace/src/github/utranand/utranand.github.io/docs/stories/5-1-module-specific-cards-tech-stack-stats-socials.context.xml)
 
 ### Agent Model Used
 
@@ -63,6 +65,19 @@ Antigravity (Bob persona)
 
 ### Debug Log References
 
+- [2026-02-11] Created TechStack, StatsCard, and SocialsCard components with react-icons integration.
+
 ### Completion Notes List
 
+- TechStack card with 4x4 grid of technology icons (Python, PyTorch, OpenAI, Tailwind).
+- StatsCard with centered large text showing "12+ Projects Deployed".
+- SocialsCard with circular icon links for GitHub and Email.
+- All cards use GlassCard component for consistent glassmorphism styling.
+- Hover effects on tech icons with scale and color transitions.
+
 ### File List
+
+- [src/components/ui/TechStack.tsx](file:///Users/puttipongu/Workspace/src/github/utranand/utranand.github.io/src/components/ui/TechStack.tsx)
+- [src/components/ui/StatsCard.tsx](file:///Users/puttipongu/Workspace/src/github/utranand/utranand.github.io/src/components/ui/StatsCard.tsx)
+- [src/components/ui/SocialsCard.tsx](file:///Users/puttipongu/Workspace/src/github/utranand/utranand.github.io/src/components/ui/SocialsCard.tsx)
+- [src/App.tsx](file:///Users/puttipongu/Workspace/src/github/utranand/utranand.github.io/src/App.tsx)

@@ -1,0 +1,79 @@
+<story-context id="bmad/bmm/workflows/4-implementation/story-context/template" v="1.0">
+  <metadata>
+    <epicId>4</epicId>
+    <storyId>1</storyId>
+    <title>Glassmorphism Project Cards</title>
+    <status>drafted</status>
+    <generatedAt>2026-02-11</generatedAt>
+    <generator>BMAD Story Context Workflow</generator>
+    <sourceStoryPath>docs/stories/4-1-glassmorphism-project-cards.md</sourceStoryPath>
+  </metadata>
+
+  <story>
+    <asA>visitor</asA>
+    <iWant>see project cards with high-fidelity Glassmorphism effects</iWant>
+    <soThat>the portfolio feels premium and visually stunning</soThat>
+    <tasks>
+      - Component Creation (AC: 1, 2, 3, 4)
+      - Feature Implementation (AC: 5, 6)
+      - Integration
+    </tasks>
+  </story>
+
+  <acceptanceCriteria>
+    - 1. BentoCard component created with a high-fidelity glass effect.
+    - 2. Backdrop blur (backdrop-filter: blur(12px)) applied.
+    - 3. Thin, semi-transparent borders (rgba(255, 255, 255, 0.1)) implemented.
+    - 4. Subtle inner shadows and gradients added to enhance depth.
+    - 5. Project images are lazily loaded within the cards.
+    - 6. Cards support different grid spans (e.g., 2x2 for featured, 1x1 for small).
+  </acceptanceCriteria>
+
+  <artifacts>
+    <docs>
+      <doc>
+        <path>docs/prd.md</path>
+        <title>AI Aesthetic Portfolio - PRD</title>
+        <section>1.1 The AI Aesthetic Paradigm</section>
+        <snippet>Glassmorphism 2.0: Higher fidelity, deeper translucent layers. Backdrop blur (12px-20px) and subtle 1px borders.</snippet>
+      </doc>
+      <doc>
+        <path>docs/architecture.md</path>
+        <title>Architecture</title>
+        <section>5.2 Epic to Architecture Mapping</section>
+        <snippet>Epic 4: Project Cards Interaction. src/components/ui/GlassCard.jsx.</snippet>
+      </doc>
+    </docs>
+    <code>
+      <artifact>
+        <path>src/components/ui/GlassCard.jsx</path>
+        <kind>component</kind>
+        <reason>Reusable card component for project display.</reason>
+      </artifact>
+    </code>
+    <dependencies>
+      <dependency>
+        <name>react</name>
+        <version>^19.0.0</version>
+      </dependency>
+      <dependency>
+        <name>framer-motion</name>
+        <version>^12.0.0</version>
+      </dependency>
+    </dependencies>
+  </artifacts>
+
+  <constraints>
+    - Glass style: bg-white opacity 3%.
+    - Blur: 12px.
+    - Border: rgba(255,255,255,0.1).
+  </constraints>
+  <interfaces></interfaces>
+  <tests>
+    <standards>Visual verification of blur and transparency levels.</standards>
+    <locations>src/components/ui/GlassCard.jsx</locations>
+    <ideas>
+      - 4.1-AC5: Verify image lazy loading attribute in DOM.
+    </ideas>
+  </tests>
+</story-context>

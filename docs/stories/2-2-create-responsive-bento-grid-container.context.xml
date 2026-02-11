@@ -1,0 +1,76 @@
+<story-context id="bmad/bmm/workflows/4-implementation/story-context/template" v="1.0">
+  <metadata>
+    <epicId>2</epicId>
+    <storyId>2</storyId>
+    <title>Create Responsive Bento Grid Container</title>
+    <status>drafted</status>
+    <generatedAt>2026-02-11</generatedAt>
+    <generator>BMAD Story Context Workflow</generator>
+    <sourceStoryPath>docs/stories/2-2-create-responsive-bento-grid-container.md</sourceStoryPath>
+  </metadata>
+
+  <story>
+    <asA>visitor</asA>
+    <iWant>see the portfolio content organized in a responsive Bento Grid</iWant>
+    <soThat>I can easily scan and consume varied information in a modern layout</soThat>
+    <tasks>
+      - Component Creation (AC: 1)
+      - Layout Implementation (AC: 2, 5, 6)
+      - Header Implementation (AC: 3, 4)
+      - Integration
+    </tasks>
+  </story>
+
+  <acceptanceCriteria>
+    - 1. BentoGrid container component created using CSS Grid.
+    - 2. Responsive layout implemented: 2-column on mobile, up to 4-column on desktop.
+    - 3. Section header "Recent Deployments" added above the grid.
+    - 4. Node count indicator included in the section header.
+    - 5. Gap between grid items configured to match design (gap-6).
+    - 6. Max-width container applied to centralize the grid on large screens.
+  </acceptanceCriteria>
+
+  <artifacts>
+    <docs>
+      <doc>
+        <path>docs/prd.md</path>
+        <title>AI Aesthetic Portfolio - PRD</title>
+        <section>1.1 The AI Aesthetic Paradigm</section>
+        <snippet>Bento Grid Architecture: Inspired by Japanese lunch boxes. Mimics how AI processes and presents modular, interrelated data.</snippet>
+      </doc>
+      <doc>
+        <path>docs/architecture.md</path>
+        <title>Architecture</title>
+        <section>5.2 Epic to Architecture Mapping</section>
+        <snippet>Epic 3: Bento Grid. src/components/sections/BentoGrid.jsx.</snippet>
+      </doc>
+    </docs>
+    <code>
+      <artifact>
+        <path>src/components/sections/BentoGrid.jsx</path>
+        <kind>component</kind>
+        <reason>Main layout container for modular project cards.</reason>
+      </artifact>
+    </code>
+    <dependencies>
+      <dependency>
+        <name>react</name>
+        <version>^19.0.0</version>
+      </dependency>
+    </dependencies>
+  </artifacts>
+
+  <constraints>
+    - Grid layout: 2 cols (mobile) -> 4 cols (desktop).
+    - Gap: gap-6.
+    - Container: max-w-7xl centered.
+  </constraints>
+  <interfaces></interfaces>
+  <tests>
+    <standards>Responsive layout verification across breakpoints.</standards>
+    <locations>src/components/sections/BentoGrid.jsx</locations>
+    <ideas>
+      - 2.2-AC2: Verify grid column count at 768px and 1024px.
+    </ideas>
+  </tests>
+</story-context>

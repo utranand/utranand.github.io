@@ -1,0 +1,79 @@
+<story-context id="bmad/bmm/workflows/4-implementation/story-context/template" v="1.0">
+  <metadata>
+    <epicId>6</epicId>
+    <storyId>1</storyId>
+    <title>Configure for GitHub Pages &amp; Deploy</title>
+    <status>drafted</status>
+    <generatedAt>2026-02-11</generatedAt>
+    <generator>BMAD Story Context Workflow</generator>
+    <sourceStoryPath>docs/stories/6-1-configure-for-github-pages-deploy.md</sourceStoryPath>
+  </metadata>
+
+  <story>
+    <asA>developer</asA>
+    <iWant>configure the project for GitHub Pages and set up automatic deployment</iWant>
+    <soThat>the site is easily accessible to the public and updates automatically upon code changes</soThat>
+    <tasks>
+      - Vite Configuration (AC: 1)
+      - CI/CD Setup (AC: 2, 3, 4)
+      - Deployment (AC: 5)
+      - Verification (AC: 6)
+    </tasks>
+  </story>
+
+  <acceptanceCriteria>
+    - 1. base path in vite.config.ts configured to match the repository name (/utranand.github.io/).
+    - 2. GitHub Actions workflow file created for automated deployment.
+    - 3. Workflow configured to trigger on pushes to the main branch.
+    - 4. Workflow successfully builds the project and deploys the dist folder.
+    - 5. Project is accessible via the GitHub Pages URL.
+    - 6. Documentation updated with the live site link.
+  </acceptanceCriteria>
+
+  <artifacts>
+    <docs>
+      <doc>
+        <path>docs/prd.md</path>
+        <title>AI Aesthetic Portfolio - PRD</title>
+        <section>4.1 Implementation Approach</section>
+        <snippet>Vitejs (static site) for performance and simplicity. Deployment to GitHub Pages.</snippet>
+      </doc>
+      <doc>
+        <path>docs/architecture.md</path>
+        <title>Architecture</title>
+        <section>2. Deployment Architecture</section>
+        <snippet>Static Hosting: GitHub Pages. Deployment Pipeline: GitHub Actions.</snippet>
+      </doc>
+    </docs>
+    <code>
+      <artifact>
+        <path>vite.config.ts</path>
+        <kind>config</kind>
+        <reason>Vite configuration for base path.</reason>
+      </artifact>
+      <artifact>
+        <path>.github/workflows/deploy.yml</path>
+        <kind>config</kind>
+        <reason>CI/CD pipeline definition.</reason>
+      </artifact>
+    </code>
+    <dependencies>
+      <dependency>
+        <name>gh-pages</name>
+        <version>^6.1.1</version>
+      </dependency>
+    </dependencies>
+  </artifacts>
+
+  <constraints>
+    - base path must be '/utranand.github.io/'.
+  </constraints>
+  <interfaces></interfaces>
+  <tests>
+    <standards>Verification of successful build and live deployment.</standards>
+    <locations>.github/workflows/deploy.yml</locations>
+    <ideas>
+      - 6.1-AC5: Verify live URL is accessible and content matches dist/index.html.
+    </ideas>
+  </tests>
+</story-context>

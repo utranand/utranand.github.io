@@ -1,0 +1,79 @@
+<story-context id="bmad/bmm/workflows/4-implementation/story-context/template" v="1.0">
+  <metadata>
+    <epicId>5</epicId>
+    <storyId>1</storyId>
+    <title>Module-Specific Cards (Tech Stack, Stats, Socials)</title>
+    <status>drafted</status>
+    <generatedAt>2026-02-11</generatedAt>
+    <generator>BMAD Story Context Workflow</generator>
+    <sourceStoryPath>docs/stories/5-1-module-specific-cards-tech-stack-stats-socials.md</sourceStoryPath>
+  </metadata>
+
+  <story>
+    <asA>visitor</asA>
+    <iWant>see specialized Bento cards for my tech stack, statistics, and social links</iWant>
+    <soThat>I can quickly understand the creator's skills and professional reach</soThat>
+    <tasks>
+      - Tech Stack Module (AC: 1, 6)
+      - Stats Module (AC: 2)
+      - Socials Module (AC: 3)
+      - Integration (AC: 4, 5)
+    </tasks>
+  </story>
+
+  <acceptanceCriteria>
+    - 1. TechStack card implemented with icons for Python, PyTorch, OpenAI, and Tailwind CSS.
+    - 2. StatsCard implemented with centered large text.
+    - 3. SocialsCard implemented with circular icons for terminal and email.
+    - 4. Each card follows the Glassmorphism and interactive spotlight standards from Epic 4.
+    - 5. Cards are laid out within the BentoGrid according to the 2026 design layout.
+    - 6. Hover effects added to tech stack icons for extra interactivity.
+  </acceptanceCriteria>
+
+  <artifacts>
+    <docs>
+      <doc>
+        <path>docs/prd.md</path>
+        <title>AI Aesthetic Portfolio - PRD</title>
+        <section>FR-013</section>
+        <snippet>Skills to display: Python, PyTorch, OpenAI, Tailwind CSS.</snippet>
+      </doc>
+      <doc>
+        <path>docs/architecture.md</path>
+        <title>Architecture</title>
+        <section>5.2 Epic to Architecture Mapping</section>
+        <snippet>Epic 5: Refinement. Includes tech stack icons.</snippet>
+      </doc>
+    </docs>
+    <code>
+      <artifact>
+        <path>src/components/ui/TechStack.jsx</path>
+        <kind>component</kind>
+        <reason>Display skills and technologies.</reason>
+      </artifact>
+    </code>
+    <dependencies>
+      <dependency>
+        <name>react</name>
+        <version>^19.0.0</version>
+      </dependency>
+      <dependency>
+        <name>react-icons</name>
+        <version>latest</version>
+      </dependency>
+    </dependencies>
+  </artifacts>
+
+  <constraints>
+    - Use react-icons for icon consistency.
+    - Inherit GlassCard styling.
+  </constraints>
+  <interfaces></interfaces>
+  <tests>
+    <standards>Visual verification of icon presence and hover states.</standards>
+    <locations>src/components/ui/TechStack.jsx</locations>
+    <ideas>
+      - 5.1-AC1: Verify presence of all required tech icons.
+    </ideas>
+  </tests>
+</story-context>

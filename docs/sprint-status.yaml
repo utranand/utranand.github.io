@@ -44,26 +44,26 @@ development_status:
   epic-1-retrospective: optional
 
   epic-2: backlog
-  2-1-implement-x-ai-floating-navbar: drafted
-  2-2-create-responsive-bento-grid-container: drafted
+  2-1-implement-x-ai-floating-navbar: done
+  2-2-create-responsive-bento-grid-container: done
   epic-2-retrospective: optional
 
   epic-3: backlog
-  3-1-dynamic-background-with-generative-movement: drafted
-  3-2-typewriter-effect-for-hero-content: drafted
+  3-1-dynamic-background-with-generative-movement: done
+  3-2-typewriter-effect-for-hero-content: done
   epic-3-retrospective: optional
 
   epic-4: backlog
-  4-1-glassmorphism-project-cards: drafted
-  4-2-mouse-tracked-spotlight-interaction: drafted
+  4-1-glassmorphism-project-cards: in-progress
+  4-2-mouse-tracked-spotlight-interaction: in-progress
   epic-4-retrospective: optional
 
   epic-5: backlog
-  5-1-module-specific-cards-tech-stack-stats-socials: drafted
-  5-2-scroll-reveal-cta-section: drafted
+  5-1-module-specific-cards-tech-stack-stats-socials: done
+  5-2-scroll-reveal-cta-section: done
   epic-5-retrospective: optional
 
   epic-6: backlog
-  6-1-configure-for-github-pages-deploy: drafted
+  6-1-configure-for-github-pages-deploy: in-progress
   epic-6-retrospective: optional
 

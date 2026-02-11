@@ -1,0 +1,80 @@
+<story-context id="bmad/bmm/workflows/4-implementation/story-context/template" v="1.0">
+  <metadata>
+    <epicId>2</epicId>
+    <storyId>1</storyId>
+    <title>Implement "X-AI" Floating Navbar</title>
+    <status>drafted</status>
+    <generatedAt>2026-02-11</generatedAt>
+    <generator>BMAD Story Context Workflow</generator>
+    <sourceStoryPath>docs/stories/2-1-implement-x-ai-floating-navbar.md</sourceStoryPath>
+  </metadata>
+
+  <story>
+    <asA>visitor</asA>
+    <iWant>see the branded "X-AI" floating navigation bar</iWant>
+    <soThat>I can easily navigate the portfolio and identify the brand</soThat>
+    <tasks>
+      - Component Creation (AC: 1)
+      - Styling & Branding (AC: 2, 3, 4)
+      - Integration (AC: 5)
+      - Interaction (AC: 6)
+    </tasks>
+  </story>
+
+  <acceptanceCriteria>
+    - 1. Navbar component created with a rounded-pill capsule shape.
+    - 2. Glassmorphism effect applied (.glass utility).
+    - 3. "X-AI" logo (cyan circle) and text branding present on the left.
+    - 4. "Work" and "Contact" navigation buttons present on the right.
+    - 5. Navbar is fixed or floating at the top of the viewport with appropriate z-index.
+    - 6. Hover states implemented for navigation buttons.
+  </acceptanceCriteria>
+
+  <artifacts>
+    <docs>
+      <doc>
+        <path>docs/prd.md</path>
+        <title>AI Aesthetic Portfolio - PRD</title>
+        <section>6.1 Navbar</section>
+        <snippet>Rounded-full glass pill layout. "X-AI" branding on the left. "Work" and "Contact" buttons on the right.</snippet>
+      </doc>
+      <doc>
+        <path>docs/architecture.md</path>
+        <title>Architecture</title>
+        <section>5.2 Epic to Architecture Mapping</section>
+        <snippet>Epic 2: Navbar branding. src/components/layout/Navbar.jsx.</snippet>
+      </doc>
+    </docs>
+    <code>
+      <artifact>
+        <path>src/components/layout/Navbar.jsx</path>
+        <kind>component</kind>
+        <reason>Core navigation and branding component.</reason>
+      </artifact>
+    </code>
+    <dependencies>
+      <dependency>
+        <name>react</name>
+        <version>^19.0.0</version>
+      </dependency>
+      <dependency>
+        <name>framer-motion</name>
+        <version>^12.0.0</version>
+      </dependency>
+    </dependencies>
+  </artifacts>
+
+  <constraints>
+    - Positioning: fixed top-6 left-1/2 -translate-x-1/2.
+    - Branding: bg-neon-cyan for logo circle.
+    - Use .glass utility.
+  </constraints>
+  <interfaces></interfaces>
+  <tests>
+    <standards>Visual verification of pill shape, glass effect, and branding.</standards>
+    <locations>src/components/layout/Navbar.jsx</locations>
+    <ideas>
+      - 2.1-AC5: Verify fixed positioning and z-index on scroll.
+    </ideas>
+  </tests>
+</story-context>

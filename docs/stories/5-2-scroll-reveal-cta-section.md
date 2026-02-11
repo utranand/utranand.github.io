@@ -1,6 +1,6 @@
 # Story 5.2: Scroll reveal & CTA Section
 
-Status: drafted
+Status: review
 
 ## Story
 
@@ -10,23 +10,23 @@ so that the browsing experience feels polished and leads to engagement.
 
 ## Acceptance Criteria
 
-1. [ ] CTA section implemented with a prominent dashed border (`border-dashed`).
-2. [ ] "Initiate Contact" button added to the CTA section.
-3. [ ] Framer Motion `whileInView` reveals implemented for all sections and Bento cards.
-4. [ ] Reveal animations are subtle (e.g., slight lift and fade in).
-5. [ ] Scroll animations are configured with `viewport={{ once: true }}` to prevent re-triggering.
-6. [ ] CTA section follows the project's Glassmorphism and dark theme standards.
+1. [x] CTA section implemented with a prominent dashed border (`border-dashed`).
+2. [x] "Initiate Contact" button added to the CTA section.
+3. [x] Framer Motion `whileInView` reveals implemented for all sections and Bento cards.
+4. [x] Reveal animations are subtle (e.g., slight lift and fade in).
+5. [x] Scroll animations are configured with `viewport={{ once: true }}` to prevent re-triggering.
+6. [x] CTA section follows the project's Glassmorphism and dark theme standards.
 
 ## Tasks / Subtasks
 
-- [ ] CTA Section (AC: 1, 2, 6)
-  - [ ] Create `src/components/sections/CTA.jsx`
-  - [ ] Implement dashed-border layout with "Initiate Contact" button
-- [ ] Animation (AC: 3, 4, 5)
-  - [ ] Implement `useScrollReveal` hook or apply `framer-motion` props globally
-  - [ ] Verify animations on all primary sections (Hero, Bento Grid, etc.)
-- [ ] Integration
-  - [ ] Add `CTA` section to the bottom of `App.jsx`
+- [x] CTA Section (AC: 1, 2, 6)
+  - [x] Create `src/components/sections/CTA.tsx`
+  - [x] Implement dashed-border layout with "Initiate Contact" button
+- [x] Animation (AC: 3, 4, 5)
+  - [x] Implement `useScrollReveal` hook or apply `framer-motion` props globally
+  - [x] Verify animations on all primary sections (Hero, Bento Grid, etc.)
+- [x] Integration
+  - [x] Add `CTA` section to the bottom of `App.tsx`
 
 ## Dev Notes
 
@@ -53,7 +53,9 @@ so that the browsing experience feels polished and leads to engagement.
 
 ### Context Reference
 
-<!-- Path(s) to story context XML will be added here by context workflow -->
+### Context Reference
+
+- [5-2-scroll-reveal-cta-section.context.xml](file:///Users/puttipongu/Workspace/src/github/utranand/utranand.github.io/docs/stories/5-2-scroll-reveal-cta-section.context.xml)
 
 ### Agent Model Used
 
@@ -61,6 +63,17 @@ Antigravity (Bob persona)
 
 ### Debug Log References
 
+- [2026-02-11] Created CTA component with scroll reveal animations and added whileInView animations to all sections.
+
 ### Completion Notes List
 
+- CTA section with glassmorphism styling and dashed purple border.
+- "Initiate Contact" button with hover glow effect.
+- Framer Motion whileInView animations on CTA, demo section, and BentoGrid.
+- All animations use viewport={{ once: true }} to prevent re-triggering.
+- Staggered animation delays for smooth sequential reveals.
+
 ### File List
+
+- [src/components/sections/CTA.tsx](file:///Users/puttipongu/Workspace/src/github/utranand/utranand.github.io/src/components/sections/CTA.tsx)
+- [src/App.tsx](file:///Users/puttipongu/Workspace/src/github/utranand/utranand.github.io/src/App.tsx)
