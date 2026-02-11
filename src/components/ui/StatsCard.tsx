@@ -1,12 +1,8 @@
-import GlassCard from './GlassCard';
-
 export default function StatsCard() {
   return (
-    <GlassCard span="small">
-      <div className="flex flex-col items-center justify-center h-full text-center">
-        <div className="text-5xl font-bold text-neon-cyan mb-2">12+</div>
-        <p className="text-sm text-gray-400">Projects Deployed</p>
-      </div>
-    </GlassCard>
+    <div className="glass rounded-xl p-4 flex flex-col items-center justify-center text-center aspect-square">
+      <span className="text-2xl font-black text-neon-cyan">12+</span>
+      <span className="text-[9px] font-bold text-slate-500 uppercase tracking-tighter">Models Built</span>
+    </div>
   );
 }

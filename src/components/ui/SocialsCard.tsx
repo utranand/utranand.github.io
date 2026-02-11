@@ -1,29 +1,14 @@
-import { FaTerminal, FaEnvelope } from 'react-icons/fa';
-import GlassCard from './GlassCard';
+import { Terminal, AtSign } from 'lucide-react';
 
 export default function SocialsCard() {
-  const socials = [
-    { icon: FaTerminal, label: 'GitHub', href: '#' },
-    { icon: FaEnvelope, label: 'Email', href: 'mailto:contact@example.com' },
-  ];
-
   return (
-    <GlassCard span="small">
-      <div className="flex flex-col items-center justify-center h-full gap-4">
-        <h4 className="text-sm font-semibold text-gray-300">Connect</h4>
-        <div className="flex gap-4">
-          {socials.map((social) => (
-            <a
-              key={social.label}
-              href={social.href}
-              className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-neon-cyan/20 hover:text-neon-cyan transition-all duration-300 group"
-              aria-label={social.label}
-            >
-              <social.icon className="w-5 h-5 text-gray-400 group-hover:text-neon-cyan transition-colors" />
-            </a>
-          ))}
-        </div>
+    <div className="glass rounded-xl p-4 flex items-center justify-center gap-4 aspect-square">
+      <div className="w-8 h-8 rounded-full glass border border-white/20 flex items-center justify-center text-slate-300 hover:text-white hover:border-white/40 transition-all cursor-pointer">
+        <Terminal size={14} />
       </div>
-    </GlassCard>
+      <div className="w-8 h-8 rounded-full glass border border-white/20 flex items-center justify-center text-slate-300 hover:text-white hover:border-white/40 transition-all cursor-pointer">
+        <AtSign size={14} />
+      </div>
+    </div>
   );
 }
