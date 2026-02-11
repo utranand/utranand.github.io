@@ -5,7 +5,7 @@
   --color-neon-cyan: #0df2f2;
   --color-neon-purple: #8b5cf6;
   
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-sans: Inter, ui-sans-serif, system-ui, sans-serif;
 }
 
 @layer utilities {
@@ -22,23 +22,8 @@
 
 @layer base {
   body {
-    background-color: var(--color-ai-bg);
+    background-color: #09090b;
     color: white;
-    font-family: var(--font-sans);
-  }
-  
-  @keyframes pulse-slow {
-    0%, 100% {
-      opacity: 0.15;
-      transform: scale(1);
-    }
-    50% {
-      opacity: 0.25;
-      transform: scale(1.05);
-    }
-  }
-  
-  .animate-pulse-slow {
-    animation: pulse-slow 8s ease-in-out infinite;
+    font-family: Inter, ui-sans-serif, system-ui, sans-serif;
   }
 }
