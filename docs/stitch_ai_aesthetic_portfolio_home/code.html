@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI Aesthetic Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0df2f2",
+                        "secondary-violet": "#8b5cf6",
+                        "background-light": "#f5f8f8",
+                        "background-dark": "#09090b",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #09090b;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glow-cyan {
+            box-shadow: 0 0 20px rgba(13, 242, 242, 0.3);
+        }
+        .glow-violet {
+            box-shadow: 0 0 20px rgba(139, 92, 246, 0.2);
+        }
+        .typewriter-cursor::after {
+            content: '|';
+            animation: blink 1s step-end infinite;
+        }
+        @keyframes blink {
+            from, to { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+        .bento-large {
+            grid-column: span 2;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-200 antialiased selection:bg-primary/30">
+<!-- Header -->
+<header class="fixed top-0 left-0 right-0 z-50 px-4 py-4">
+<nav class="glass rounded-full px-6 py-3 flex items-center justify-between max-w-lg mx-auto border border-white/10">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 bg-primary rounded-full blur-[2px] opacity-80"></div>
+<span class="font-bold tracking-tighter text-white">X-AI</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-xs font-medium text-slate-400 hover:text-primary uppercase tracking-widest">Work</button>
+<button class="bg-primary/10 border border-primary/20 text-primary px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider">Contact</button>
+</div>
+</nav>
+</header>
+<main class="pt-28 pb-20 px-4 max-w-lg mx-auto space-y-8">
+<!-- Hero Section -->
+<section class="text-center space-y-4 py-10 relative overflow-hidden">
+<div class="absolute -top-20 -left-20 w-40 h-40 bg-primary/20 rounded-full blur-[100px]"></div>
+<div class="absolute -bottom-20 -right-20 w-40 h-40 bg-secondary-violet/20 rounded-full blur-[100px]"></div>
+<div class="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-3 py-1 mb-2">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="text-[10px] font-bold tracking-widest uppercase text-slate-400">Available for Innovation</span>
+</div>
+<h1 class="text-4xl font-extrabold tracking-tight text-white">
+                Building the Future <br/>
+<span class="text-primary italic">with AI</span>
+</h1>
+<p class="text-slate-400 text-sm max-w-xs mx-auto typewriter-cursor">
+                Architecting neural pathways &amp; LLMs for the next digital frontier.
+            </p>
+<div class="pt-4 flex justify-center gap-3">
+<button class="bg-primary text-background-dark px-6 py-3 rounded-xl font-bold text-sm glow-cyan flex items-center gap-2">
+                    Explore Systems <span class="material-icons text-sm">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Bento Grid Projects -->
+<section class="space-y-4">
+<div class="flex items-end justify-between px-1">
+<h2 class="text-lg font-bold text-white tracking-tight">Recent Deployments</h2>
+<span class="text-[10px] text-slate-500 font-medium uppercase tracking-widest">04 Active Nodes</span>
+</div>
+<div class="bento-grid">
+<!-- Large Featured Card -->
+<div class="bento-large glass rounded-xl overflow-hidden relative group">
+<img alt="Project Neon" class="w-full h-48 object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" data-alt="A futuristic neural network visualization with glowing cyan nodes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_wj3KqC623g15kNXEyC24lSh6lEEQdmsojXArCB6SCxOcmNCs7jj502-dHQBW88r5NmVjvKfibV7QWjj5O3UOkqKpMnBZ_mGrRGURuWDtFFt-cavffh6anknXcQCzAMtbCYKoGiQL5WBlgn6wCfR-IHd4d-U5UOLLE7TXrxRkGYMvlREZNwFfhCguuSqiHoPApPM1Palp_Q1SV9WXbWHPId6P-npcLE-dAKLYLCp7ct84dmFkhtlODviz9-TLiYariZ0kTi9q5rI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-5 w-full">
+<div class="flex justify-between items-end">
+<div>
+<span class="text-[9px] font-bold text-primary uppercase tracking-widest">Core Engine</span>
+<h3 class="text-lg font-bold text-white">NeuralLink 2.0</h3>
+<p class="text-xs text-slate-400 mt-1 line-clamp-1">Self-optimizing cognitive architectures for edge computing.</p>
+</div>
+<div class="w-10 h-10 rounded-lg glass flex items-center justify-center border-white/20">
+<span class="material-icons text-primary text-xl">open_in_new</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Small Card 1 -->
+<div class="glass rounded-xl p-4 flex flex-col justify-between aspect-square border-l-secondary-violet/30 border-l-2">
+<div class="w-8 h-8 rounded-lg bg-secondary-violet/20 flex items-center justify-center">
+<span class="material-icons text-secondary-violet text-lg">psychology</span>
+</div>
+<div>
+<h3 class="text-sm font-bold text-white">Sentience.io</h3>
+<p class="text-[10px] text-slate-500 mt-1">NLP Sentiment Analysis API for high-frequency trading.</p>
+</div>
+</div>
+<!-- Small Card 2 -->
+<div class="glass rounded-xl p-4 flex flex-col justify-between aspect-square border-l-primary/30 border-l-2">
+<div class="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
+<span class="material-icons text-primary text-lg">auto_awesome</span>
+</div>
+<div>
+<h3 class="text-sm font-bold text-white">Gen-Vision</h3>
+<p class="text-[10px] text-slate-500 mt-1">Real-time object detection using custom YOLOv8.</p>
+</div>
+</div>
+<!-- Wide Horizontal Card - Tech Stack -->
+<div class="bento-large glass rounded-xl p-5 border-t-white/10">
+<div class="flex justify-between items-center mb-4">
+<h3 class="text-xs font-bold text-slate-400 uppercase tracking-widest">Neural Tech Stack</h3>
+<div class="flex gap-1">
+<div class="w-1 h-1 rounded-full bg-primary"></div>
+<div class="w-1 h-1 rounded-full bg-white/20"></div>
+<div class="w-1 h-1 rounded-full bg-white/20"></div>
+</div>
+</div>
+<div class="flex justify-between items-center px-2">
+<div class="flex flex-col items-center gap-1">
+<div class="w-12 h-12 rounded-xl glass border-white/5 flex items-center justify-center hover:border-primary/50 transition-colors">
+<img alt="Python" class="w-6 h-6" data-alt="Python Logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcwJe9Ch45Kgn_QqEhOYx6a-HeI7YQI6Ds422Wu5BMQ8NfIMR31Lq2SfCWCLMkDGVY8TtMxSSpdnfimONtLeRwzaGAh0UzusugVJi28peFMFyDceHfK1Z3EkWHa4sWUGx61l3RoDnSlxkFwUbzmKx2fO_dNfVEh6Ve8jVh70BZZ_3PRqtPumMaB6MjEmEU4LTNrXd-M3-KFK70VXWfEHT_KmfoBk-yqadOzUWt8B-5iucU6pJhuegOsjJQap8U9-8aJwiXu9TKI_8"/>
+</div>
+<span class="text-[9px] text-slate-500">Python</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-12 h-12 rounded-xl glass border-white/5 flex items-center justify-center hover:border-primary/50 transition-colors">
+<img alt="PyTorch" class="w-6 h-6" data-alt="PyTorch Logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD44Cv-88sDGgPtXcX2ilvbkNAwqPCIzBp9FBxeRjHxlWXOek17LSiURl6ZMR-8LYg38KEUCMHfj-asv7X-olWjCKkbMmxU7OFC80ZdwtHJKNeMUVyQt-r6Ev3XaChx_BxIT77JzPG_rZbEGT0uxNGvf6REBeaNy5QoxYK2NRedcyMyhGV0WzgsG8sbLMBaweXykgcrqGlVbhN7t7X_-Rjt8F5BALxPyMc9TSTW_cI5EF4beFV_z_MCwjdsZDG2fXfzGKJ4xbYxkXs"/>
+</div>
+<span class="text-[9px] text-slate-500">PyTorch</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-12 h-12 rounded-xl glass border-white/5 flex items-center justify-center hover:border-primary/50 transition-colors">
+<img alt="OpenAI" class="w-6 h-6 invert opacity-80" data-alt="OpenAI Logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcnegYcqkP0GE_FehrRQMXQaNrh9wFwzEYdumaT_epu4l9Hr3b3TjKgjsh_2t_Q2Ixl5RwCDX84JGhJ1J3KYr6CDxGZcesy9KRIQ3PiSozdanZEjxmUU5OepTAg9Co9DEE3GAwnLf8mEJGoqf_A_HbT9M231T8zbxTMHf8mdt6gaGWIoiyID4bSjHpY4GO8wOTM761j6gN5VEuYsJaIMSoK6Z9tKDe0oTSw-Jb9_nppy4ehoTaIhIy9K0H4ADJFZPUTSCbuTkJRMk"/>
+</div>
+<span class="text-[9px] text-slate-500">OpenAI</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-12 h-12 rounded-xl glass border-white/5 flex items-center justify-center hover:border-primary/50 transition-colors">
+<img alt="Tailwind" class="w-6 h-6" data-alt="Tailwind CSS Logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYN_SdiJi53ZJvt1LF33zKl2LqQoagZoLe1HsGyM_g0PmTjh2JGvFOgvA9W_MRB-QLi7eiJStwO0Ei0J3acIzl2JY4qbMCqCwcuhLJxLt14qVWMTEjcGOWOovqNATjthw3vab3kLw9nzMo0nYt-Yg-yx-c681lldE9BNqnfwgtewYgL2XI4yRjY7f77h_5RzmaSBDVS0Vv29PuSHsP4zNFPDDx7gCElu1TToB2zZIWEVLCDJyU1ni-mltNAfnPUwmbFP0qR9YOE50"/>
+</div>
+<span class="text-[9px] text-slate-500">Tailwind</span>
+</div>
+</div>
+</div>
+<!-- Stats Card -->
+<div class="glass rounded-xl p-4 flex flex-col items-center justify-center text-center">
+<span class="text-2xl font-black text-primary">12+</span>
+<span class="text-[9px] font-bold text-slate-500 uppercase tracking-tighter">Models Built</span>
+</div>
+<!-- Socials Card -->
+<div class="glass rounded-xl p-4 flex items-center justify-center gap-4">
+<div class="w-8 h-8 rounded-full glass border-white/20 flex items-center justify-center text-slate-300">
+<span class="material-icons text-sm">terminal</span>
+</div>
+<div class="w-8 h-8 rounded-full glass border-white/20 flex items-center justify-center text-slate-300">
+<span class="material-icons text-sm">alternate_email</span>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="pt-8 text-center relative">
+<div class="glass rounded-2xl p-8 border-dashed border-white/20">
+<h3 class="text-xl font-bold text-white mb-2">Ready to evolve?</h3>
+<p class="text-sm text-slate-400 mb-6">Let's build the next generation of intelligent software together.</p>
+<button class="w-full py-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl text-white font-bold tracking-widest text-xs uppercase transition-all">
+                    Initiate Contact
+                </button>
+</div>
+<div class="mt-12 flex flex-col items-center gap-2 opacity-30">
+<p class="text-[10px] font-medium tracking-[0.2em] uppercase">Encrypted Connection Established</p>
+<div class="flex gap-1">
+<div class="w-4 h-1 bg-primary rounded-full"></div>
+<div class="w-2 h-1 bg-primary/50 rounded-full"></div>
+<div class="w-1 h-1 bg-primary/20 rounded-full"></div>
+</div>
+</div>
+</section>
+</main>
+<!-- Background Decoration -->
+<div class="fixed top-0 left-0 w-full h-full -z-10 overflow-hidden pointer-events-none">
+<div class="absolute top-[10%] left-[5%] w-64 h-64 bg-primary/5 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-[20%] right-[10%] w-80 h-80 bg-secondary-violet/5 rounded-full blur-[150px]"></div>
+<div class="absolute top-0 left-0 w-full h-full opacity-[0.03]" style="background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 40px 40px;"></div>
+</div>
+<!-- iOS Home Indicator Spacing -->
+<div class="h-8 w-full"></div>
+</body></html>
