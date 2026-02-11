@@ -1,0 +1,74 @@
+<story-context id="bmad/bmm/workflows/4-implementation/story-context/template" v="1.0">
+  <metadata>
+    <epicId>1</epicId>
+    <storyId>1</storyId>
+    <title>Initialize Vite + React Project</title>
+    <status>approved</status>
+    <generatedAt>2026-02-11</generatedAt>
+    <generator>BMAD Story Context Workflow</generator>
+    <sourceStoryPath>docs/stories/1-1-initialize-vite-react-project.md</sourceStoryPath>
+  </metadata>
+
+  <story>
+    <asA>developer</asA>
+    <iWant>initialize the Vite/React project</iWant>
+    <soThat>I have a clean starting point for the portfolio implementation</soThat>
+    <tasks>
+      - Initialize project (AC: 1, 4)
+      - Establish directory structure (AC: 2)
+      - Verification (AC: 3)
+    </tasks>
+  </story>
+
+  <acceptanceCriteria>
+    - 1. Project initialized using `npm create vite@latest ./ -- --template react`.
+    - 2. Directory structure established as per PRD (src/components, src/sections, src/ui, etc.).
+    - 3. `npm run dev` starts correctly and shows the default Vite + React page.
+    - 4. `vite.config.ts` (or .js) exists in the root.
+  </acceptanceCriteria>
+
+  <artifacts>
+    <docs>
+      <doc>
+        <path>docs/prd.md</path>
+        <title>AI Aesthetic Portfolio - PRD</title>
+        <section>1.2 Why ViteJS and Static Site?</section>
+        <snippet>Choosing a "Static Website" powered by "ViteJS" is a strategic, performance-driven decision.</snippet>
+      </doc>
+      <doc>
+        <path>docs/architecture.md</path>
+        <title>Architecture</title>
+        <section>Project Initialization</section>
+        <snippet>First implementation story should execute: npm create vite@latest ./ -- --template react</snippet>
+      </doc>
+    </docs>
+    <code>
+    </code>
+    <dependencies>
+      <dependency>
+        <name>vite</name>
+        <version>^7.3.1</version>
+      </dependency>
+      <dependency>
+        <name>react</name>
+        <version>^19.2.4</version>
+      </dependency>
+    </dependencies>
+  </artifacts>
+
+  <constraints>
+    - Build Tool: Vite 7.3.1 (Latest Stable)
+    - Library: React 19.2.4 (Latest Stable)
+    - Deployment Ready: Configured for static site hosting (GitHub Pages).
+    - Use the standard BMad project structure defined in Architecture.
+  </constraints>
+  <interfaces></interfaces>
+  <tests>
+    <standards>Vite default dev server verification and script existence.</standards>
+    <locations>root, src/</locations>
+    <ideas>
+      - 1.1-AC3: Run `npm run dev` and verify output.
+      - 1.1-AC4: Verify `vite.config.ts` (or .js) exists in the root.
+    </ideas>
+  </tests>
+</story-context>

@@ -1,0 +1,84 @@
+<story-context id="bmad/bmm/workflows/4-implementation/story-context/template" v="1.0">
+  <metadata>
+    <epicId>1</epicId>
+    <storyId>2</storyId>
+    <title>Configure Tailwind CSS v4 & Design System</title>
+    <status>drafted</status>
+    <generatedAt>2026-02-11</generatedAt>
+    <generator>BMAD Story Context Workflow</generator>
+    <sourceStoryPath>docs/stories/1-2-configure-tailwind-css-v4-design-system.md</sourceStoryPath>
+  </metadata>
+
+  <story>
+    <asA>developer</asA>
+    <iWant>configure Tailwind CSS v4 and the X-AI design system</iWant>
+    <soThat>the application matches the "AI era" aesthetic requirements</soThat>
+    <tasks>
+      - Install Tailwind CSS v4 (AC: 1)
+      - Configure Design System (AC: 2, 3)
+      - Implement Glassmorphism Utility (AC: 4)
+      - Verification (AC: 5)
+    </tasks>
+  </story>
+
+  <acceptanceCriteria>
+    - 1. Tailwind CSS v4 and dependencies installed (`tailwindcss`, `postcss`, `autoprefixer`).
+    - 2. Tailwind configured with specific project colors: Primary: `#0df2f2`, Secondary Violet: `#8b5cf6`, Background Dark: `#09090b`.
+    - 3. `Inter` font imported from Google Fonts and set as default sans font.
+    - 4. Global `.glass` utility class implemented with `backdrop-filter: blur(12px)`.
+    - 5. Color palette verified in a basic component.
+  </acceptanceCriteria>
+
+  <artifacts>
+    <docs>
+      <doc>
+        <path>docs/prd.md</path>
+        <title>AI Aesthetic Portfolio - PRD</title>
+        <section>1.1 The AI Aesthetic Paradigm</section>
+        <snippet>Tangible Depth (Glassmorphism 2.0): backdrop-filter: blur(12px). Luminescence & Glow: Deep Charcoal/Slate with Neon Accents.</snippet>
+      </doc>
+      <doc>
+        <path>docs/architecture.md</path>
+        <title>Architecture</title>
+        <section>Decision Summary</section>
+        <snippet>Tailwind CSS v4.1.18. Primary: #0df2f2, Secondary-violet: #8b5cf6, Background-dark: #09090b.</snippet>
+      </doc>
+    </docs>
+    <code>
+      <artifact>
+        <path>src/styles/globals.css</path>
+        <kind>style</kind>
+        <reason>Global styles for Tailwind directives and glass utility.</reason>
+      </artifact>
+    </code>
+    <dependencies>
+      <dependency>
+        <name>tailwindcss</name>
+        <version>4.1.18</version>
+      </dependency>
+      <dependency>
+        <name>postcss</name>
+        <version>latest</version>
+      </dependency>
+      <dependency>
+        <name>autoprefixer</name>
+        <version>latest</version>
+      </dependency>
+    </dependencies>
+  </artifacts>
+
+  <constraints>
+    - Use exact hex colors: #0df2f2 (cyan), #8b5cf6 (violet), #09090b (dark bg).
+    - Default sans font: Inter (Google Fonts).
+    - Glass blur: 12px.
+    - Follow Tailwind v4 configuration patterns.
+  </constraints>
+  <interfaces></interfaces>
+  <tests>
+    <standards>Visual verification of design tokens and utility classes.</standards>
+    <locations>src/styles/globals.css, src/App.jsx</locations>
+    <ideas>
+      - 1.2-AC5: Apply bg-ai-bg and .glass to a test element in App.jsx and verify contrast/blur.
+    </ideas>
+  </tests>
+</story-context>
